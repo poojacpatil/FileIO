@@ -38,6 +38,14 @@
             this.btnReadFile = new System.Windows.Forms.Button();
             this.btnCreateFolder = new System.Windows.Forms.Button();
             this.btnCreateFile = new System.Windows.Forms.Button();
+            this.btnBinaryWrite = new System.Windows.Forms.Button();
+            this.btnBinaryRead = new System.Windows.Forms.Button();
+            this.btnXmlWrite = new System.Windows.Forms.Button();
+            this.btnXmlRead = new System.Windows.Forms.Button();
+            this.btnSoapWrite = new System.Windows.Forms.Button();
+            this.btnSoapRead = new System.Windows.Forms.Button();
+            this.btnJsonWrite = new System.Windows.Forms.Button();
+            this.btnJsonRead = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblDeptId
@@ -100,9 +108,9 @@
             // 
             // btnReadFile
             // 
-            this.btnReadFile.Location = new System.Drawing.Point(314, 211);
+            this.btnReadFile.Location = new System.Drawing.Point(303, 211);
             this.btnReadFile.Name = "btnReadFile";
-            this.btnReadFile.Size = new System.Drawing.Size(135, 23);
+            this.btnReadFile.Size = new System.Drawing.Size(122, 23);
             this.btnReadFile.TabIndex = 7;
             this.btnReadFile.Text = "Read From File";
             this.btnReadFile.UseVisualStyleBackColor = true;
@@ -120,7 +128,7 @@
             // 
             // btnCreateFile
             // 
-            this.btnCreateFile.Location = new System.Drawing.Point(327, 275);
+            this.btnCreateFile.Location = new System.Drawing.Point(303, 275);
             this.btnCreateFile.Name = "btnCreateFile";
             this.btnCreateFile.Size = new System.Drawing.Size(122, 23);
             this.btnCreateFile.TabIndex = 9;
@@ -128,11 +136,99 @@
             this.btnCreateFile.UseVisualStyleBackColor = true;
             this.btnCreateFile.Click += new System.EventHandler(this.btnCreateFile_Click);
             // 
+            // btnBinaryWrite
+            // 
+            this.btnBinaryWrite.Location = new System.Drawing.Point(474, 43);
+            this.btnBinaryWrite.Name = "btnBinaryWrite";
+            this.btnBinaryWrite.Size = new System.Drawing.Size(119, 23);
+            this.btnBinaryWrite.TabIndex = 10;
+            this.btnBinaryWrite.Text = "Binary Write";
+            this.btnBinaryWrite.UseVisualStyleBackColor = true;
+            this.btnBinaryWrite.Click += new System.EventHandler(this.btnBinaryWrite_Click);
+            // 
+            // btnBinaryRead
+            // 
+            this.btnBinaryRead.Location = new System.Drawing.Point(474, 96);
+            this.btnBinaryRead.Name = "btnBinaryRead";
+            this.btnBinaryRead.Size = new System.Drawing.Size(119, 23);
+            this.btnBinaryRead.TabIndex = 11;
+            this.btnBinaryRead.Text = "Binary Read";
+            this.btnBinaryRead.UseVisualStyleBackColor = true;
+            this.btnBinaryRead.Click += new System.EventHandler(this.btnBinaryRead_Click);
+            // 
+            // btnXmlWrite
+            // 
+            this.btnXmlWrite.Location = new System.Drawing.Point(474, 162);
+            this.btnXmlWrite.Name = "btnXmlWrite";
+            this.btnXmlWrite.Size = new System.Drawing.Size(119, 23);
+            this.btnXmlWrite.TabIndex = 12;
+            this.btnXmlWrite.Text = "Xml Write";
+            this.btnXmlWrite.UseVisualStyleBackColor = true;
+            this.btnXmlWrite.Click += new System.EventHandler(this.btnXmlWrite_Click);
+            // 
+            // btnXmlRead
+            // 
+            this.btnXmlRead.Location = new System.Drawing.Point(474, 211);
+            this.btnXmlRead.Name = "btnXmlRead";
+            this.btnXmlRead.Size = new System.Drawing.Size(119, 23);
+            this.btnXmlRead.TabIndex = 13;
+            this.btnXmlRead.Text = "Xml Read";
+            this.btnXmlRead.UseVisualStyleBackColor = true;
+            this.btnXmlRead.Click += new System.EventHandler(this.btnXmlRead_Click);
+            // 
+            // btnSoapWrite
+            // 
+            this.btnSoapWrite.Location = new System.Drawing.Point(638, 45);
+            this.btnSoapWrite.Name = "btnSoapWrite";
+            this.btnSoapWrite.Size = new System.Drawing.Size(103, 23);
+            this.btnSoapWrite.TabIndex = 14;
+            this.btnSoapWrite.Text = "Soap Write";
+            this.btnSoapWrite.UseVisualStyleBackColor = true;
+            this.btnSoapWrite.Click += new System.EventHandler(this.btnSoapWrite_Click);
+            // 
+            // btnSoapRead
+            // 
+            this.btnSoapRead.Location = new System.Drawing.Point(638, 96);
+            this.btnSoapRead.Name = "btnSoapRead";
+            this.btnSoapRead.Size = new System.Drawing.Size(103, 23);
+            this.btnSoapRead.TabIndex = 15;
+            this.btnSoapRead.Text = "Soap Read";
+            this.btnSoapRead.UseVisualStyleBackColor = true;
+            this.btnSoapRead.Click += new System.EventHandler(this.btnSoapRead_Click);
+            // 
+            // btnJsonWrite
+            // 
+            this.btnJsonWrite.Location = new System.Drawing.Point(638, 160);
+            this.btnJsonWrite.Name = "btnJsonWrite";
+            this.btnJsonWrite.Size = new System.Drawing.Size(103, 23);
+            this.btnJsonWrite.TabIndex = 16;
+            this.btnJsonWrite.Text = "Json Write";
+            this.btnJsonWrite.UseVisualStyleBackColor = true;
+            this.btnJsonWrite.Click += new System.EventHandler(this.btnJsonWrite_Click);
+            // 
+            // btnJsonRead
+            // 
+            this.btnJsonRead.Location = new System.Drawing.Point(638, 211);
+            this.btnJsonRead.Name = "btnJsonRead";
+            this.btnJsonRead.Size = new System.Drawing.Size(103, 23);
+            this.btnJsonRead.TabIndex = 17;
+            this.btnJsonRead.Text = "Json Read";
+            this.btnJsonRead.UseVisualStyleBackColor = true;
+            this.btnJsonRead.Click += new System.EventHandler(this.btnJsonRead_Click);
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnJsonRead);
+            this.Controls.Add(this.btnJsonWrite);
+            this.Controls.Add(this.btnSoapRead);
+            this.Controls.Add(this.btnSoapWrite);
+            this.Controls.Add(this.btnXmlRead);
+            this.Controls.Add(this.btnXmlWrite);
+            this.Controls.Add(this.btnBinaryRead);
+            this.Controls.Add(this.btnBinaryWrite);
             this.Controls.Add(this.btnCreateFile);
             this.Controls.Add(this.btnCreateFolder);
             this.Controls.Add(this.btnReadFile);
@@ -162,5 +258,13 @@
         private System.Windows.Forms.Button btnReadFile;
         private System.Windows.Forms.Button btnCreateFolder;
         private System.Windows.Forms.Button btnCreateFile;
+        private System.Windows.Forms.Button btnBinaryWrite;
+        private System.Windows.Forms.Button btnBinaryRead;
+        private System.Windows.Forms.Button btnXmlWrite;
+        private System.Windows.Forms.Button btnXmlRead;
+        private System.Windows.Forms.Button btnSoapWrite;
+        private System.Windows.Forms.Button btnSoapRead;
+        private System.Windows.Forms.Button btnJsonWrite;
+        private System.Windows.Forms.Button btnJsonRead;
     }
 }

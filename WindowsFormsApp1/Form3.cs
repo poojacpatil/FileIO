@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -68,6 +69,46 @@ namespace WindowsFormsApp1
             richTextBox1.Cut();
         }
 
-   
+        private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                SaveFileDialog sd= new SaveFileDialog();
+                sd.DefaultExt = ".txt";
+                //meaning of * is any file name with following extension
+                sd.Filter = "Text Dococument(*.txt)|*.txt| Word(*.docx)|*.docx";
+                DialogResult result=sd.ShowDialog();
+                if(result== DialogResult.OK )
+                {
+                    StreamWriter sw = new StreamWriter(sd.FileName);
+                    sw.WriteLine(richTextBox1.Text);
+                    sw.Close();
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);    
+            }
+        }
+
+        private void saveToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                OpenFileDialog od=new OpenFileDialog();
+                od.Filter = "Text Dococument(*.txt)|*.txt| Word(*.docx)|*.docx";
+                DialogResult result = od.ShowDialog();  
+                if( result==DialogResult.OK )
+                {
+                    StreamReader sr =new StreamReader(od.FileName);
+                    richTextBox1.Text= sr.ReadToEnd();  
+                    sr.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

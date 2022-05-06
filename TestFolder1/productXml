@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<Product xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>567</Id>
+  <Name>asdf</Name>
+  <Price>567</Price>
+  <CategoryName>dghj</CategoryName>
+</Product>

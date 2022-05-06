@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<Book xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>45</Id>
+  <Name>hjjk</Name>
+  <AuthorName>fgh</AuthorName>
+  <Price>678</Price>
+</Book>
