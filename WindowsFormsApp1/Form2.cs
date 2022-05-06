@@ -17,27 +17,7 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        private void lblFullName_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblEmailId_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblContactNumber_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblAddress_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnShow_Click(object sender, EventArgs e)
+       private void btnShow_Click(object sender, EventArgs e)
         {
             if(textFullName.Text=="pooja" && textEmailId.Text=="poojacpatil99@gmail.com" && textContactNumber.Text=="9865789567" &&
                 textAddress.Text=="Karad")

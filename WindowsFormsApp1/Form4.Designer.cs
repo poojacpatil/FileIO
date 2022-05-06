@@ -31,9 +31,9 @@
             this.lblDeptId = new System.Windows.Forms.Label();
             this.lblDeptName = new System.Windows.Forms.Label();
             this.lblLocation = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtId = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.txtLocation = new System.Windows.Forms.TextBox();
             this.btnWriteFile = new System.Windows.Forms.Button();
             this.btnReadFile = new System.Windows.Forms.Button();
             this.btnCreateFolder = new System.Windows.Forms.Button();
@@ -67,26 +67,26 @@
             this.lblLocation.TabIndex = 2;
             this.lblLocation.Text = "Enter Location";
             // 
-            // textBox1
+            // txtId
             // 
-            this.textBox1.Location = new System.Drawing.Point(289, 43);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 3;
+            this.txtId.Location = new System.Drawing.Point(289, 43);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(100, 20);
+            this.txtId.TabIndex = 3;
             // 
-            // textBox2
+            // txtName
             // 
-            this.textBox2.Location = new System.Drawing.Point(289, 96);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 4;
+            this.txtName.Location = new System.Drawing.Point(289, 96);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(100, 20);
+            this.txtName.TabIndex = 4;
             // 
-            // textBox3
+            // txtLocation
             // 
-            this.textBox3.Location = new System.Drawing.Point(289, 160);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 5;
+            this.txtLocation.Location = new System.Drawing.Point(289, 160);
+            this.txtLocation.Name = "txtLocation";
+            this.txtLocation.Size = new System.Drawing.Size(100, 20);
+            this.txtLocation.TabIndex = 5;
             // 
             // btnWriteFile
             // 
@@ -96,6 +96,7 @@
             this.btnWriteFile.TabIndex = 6;
             this.btnWriteFile.Text = "Write to File";
             this.btnWriteFile.UseVisualStyleBackColor = true;
+            this.btnWriteFile.Click += new System.EventHandler(this.btnWriteFile_Click);
             // 
             // btnReadFile
             // 
@@ -105,6 +106,7 @@
             this.btnReadFile.TabIndex = 7;
             this.btnReadFile.Text = "Read From File";
             this.btnReadFile.UseVisualStyleBackColor = true;
+            this.btnReadFile.Click += new System.EventHandler(this.btnReadFile_Click);
             // 
             // btnCreateFolder
             // 
@@ -135,9 +137,9 @@
             this.Controls.Add(this.btnCreateFolder);
             this.Controls.Add(this.btnReadFile);
             this.Controls.Add(this.btnWriteFile);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtLocation);
+            this.Controls.Add(this.txtName);
+            this.Controls.Add(this.txtId);
             this.Controls.Add(this.lblLocation);
             this.Controls.Add(this.lblDeptName);
             this.Controls.Add(this.lblDeptId);
@@ -153,9 +155,9 @@
         private System.Windows.Forms.Label lblDeptId;
         private System.Windows.Forms.Label lblDeptName;
         private System.Windows.Forms.Label lblLocation;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtId;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.TextBox txtLocation;
         private System.Windows.Forms.Button btnWriteFile;
         private System.Windows.Forms.Button btnReadFile;
         private System.Windows.Forms.Button btnCreateFolder;

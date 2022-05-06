@@ -68,7 +68,6 @@
             this.lblFullName.Size = new System.Drawing.Size(54, 13);
             this.lblFullName.TabIndex = 2;
             this.lblFullName.Text = "Full Name";
-            this.lblFullName.Click += new System.EventHandler(this.lblFullName_Click);
             // 
             // lblEmailId
             // 
@@ -78,7 +77,6 @@
             this.lblEmailId.Size = new System.Drawing.Size(44, 13);
             this.lblEmailId.TabIndex = 3;
             this.lblEmailId.Text = "Email Id";
-            this.lblEmailId.Click += new System.EventHandler(this.lblEmailId_Click);
             // 
             // lblContactNumber
             // 
@@ -88,7 +86,6 @@
             this.lblContactNumber.Size = new System.Drawing.Size(84, 13);
             this.lblContactNumber.TabIndex = 4;
             this.lblContactNumber.Text = "Contact Number";
-            this.lblContactNumber.Click += new System.EventHandler(this.lblContactNumber_Click);
             // 
             // lblAddress
             // 
@@ -98,7 +95,6 @@
             this.lblAddress.Size = new System.Drawing.Size(45, 13);
             this.lblAddress.TabIndex = 5;
             this.lblAddress.Text = "Address";
-            this.lblAddress.Click += new System.EventHandler(this.lblAddress_Click);
             // 
             // textFullName
             // 

@@ -17,13 +17,6 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
-
-        
-
-      
-
-     
-
         private void btnCreateFolder_Click(object sender, EventArgs e)
         {
             try
@@ -66,6 +59,57 @@ namespace WindowsFormsApp1
                 MessageBox.Show(ex.Message);
             }
             
+        }
+        FileStream fs;
+        private void btnWriteFile_Click(object sender, EventArgs e)
+        {
+            
+            try
+            {
+                int id=Convert.ToInt32(txtId.Text);
+                string Name = txtName.Text;
+                string Location=txtLocation.Text;
+                 fs = new FileStream(@"c:\Users\Pankaj\source\repos\WindowsFormsApp1\FirstFile.txt",FileMode.Create, FileAccess.Write);
+                BinaryWriter bw=new BinaryWriter(fs);
+                bw.Write(id);
+                bw.Write(Name);
+                bw.Write(Location);
+                bw.Close();
+
+                MessageBox.Show("Done");
+
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+
+            }
+            finally
+            {
+                fs.Close();
+            }
+        }
+
+        private void btnReadFile_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                fs = new FileStream(@"c:\Users\Pankaj\source\repos\WindowsFormsApp1\FirstFile.txt", FileMode.Open, FileAccess.Read);
+                BinaryReader br=new BinaryReader(fs);   
+                txtId.Text=br.ReadInt32().ToString(); 
+                txtName.Text=br.ReadString();
+                txtLocation.Text = br.ReadString();     
+                br.Close(); //close the opeation reader
+                MessageBox.Show("Done");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                fs.Close();  //free the resource
+            }
         }
     }
 }

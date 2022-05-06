@@ -17,25 +17,7 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        private void helpToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void newToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void saveAsToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
     
-        }
-
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-           
-        }
 
         private void undoToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -54,7 +36,7 @@ namespace WindowsFormsApp1
 
         private void deletToolStripMenuItem_Click(object sender, EventArgs e)
         {
-       
+           
         }
 
       
@@ -78,5 +60,14 @@ namespace WindowsFormsApp1
                 richTextBox1.SelectionColor = ColorDialog.Color;
             }
         }
+
+   
+
+        private void cutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            richTextBox1.Cut();
+        }
+
+   
     }
 }
